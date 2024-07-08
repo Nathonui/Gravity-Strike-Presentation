@@ -1,0 +1,137 @@
+:root {
+    --color-primary: #007FFF;
+    --color-secondary: #FF2400;
+    --color-text: #FFFFFF;
+}
+
+body {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 40px 25px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1, nav h3 {
+    margin: 0;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav h1 {
+    font-size: 2.5em;
+    color: var(--color-secondary);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav h3 {
+    font-size: 1.6em;
+    color: rgb(35, 200, 255);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0px 50px;
+    margin-left: -30px;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.3em;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+main {
+    padding: 50px 20px 20px; /* Réduit l'espace en haut */
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FF2400;
+}
+
+section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#logo {
+    width: 430px;
+    float: right;
+    margin-right: 250px;
+    cursor: pointer;
+    position: relative;
+    bottom: 195px;
+}
+
+#Presentation p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+#Presentation ul {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+#Team li {
+    font-size: 1.3em;
+    font-weight: bold;
+}
